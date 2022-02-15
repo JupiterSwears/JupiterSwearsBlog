@@ -1,5 +1,5 @@
 title = "Jupiter Swears"
-baseURL = ""
+baseURL = "/"
 
 # using theme locally (git clone, submodule or as zip)
 theme = "bilberry-hugo-theme"
