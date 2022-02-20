@@ -3,7 +3,7 @@
 baseurl                 = "/"
 DefaultContentLanguage  = "en"
 title                   = "Jupiter Swears"
-theme                   = "imperfect-slim"
+theme                   = "github.com/pacollins/hugo-future-imperfect-slim"
 paginate                = 3
 disqusShortname         = ""
 GoogleAnalytics         = "G-GRD1K1JVF5"
@@ -22,6 +22,7 @@ canonifyURLs            = true
 
   [[module.imports]]
   path = 'github.com/pacollins/hugo-future-imperfect-slim'
+  
 
 [outputs]
   home                  = ["html", "json", "rss"]
