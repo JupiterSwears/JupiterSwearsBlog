@@ -1,206 +1,349 @@
-title = "Jupiter Swears"
-baseURL = "/"
+# For a description of these parameters, please visit the theme wiki.
+# https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
+baseurl                 = "/"
+DefaultContentLanguage  = "en"
+title                   = "Jupiter Swears"
+theme                   = "imperfect-slim"
+paginate                = 3
+disqusShortname         = ""
+GoogleAnalytics         = "G-GRD1K1JVF5"
+pluralizeListTitles     = false
+disableLanguages        = []
+enableRobotsTXT         = true
+canonifyURLs            = true
 
-# using theme locally (git clone, submodule or as zip)
-theme = "bilberry-hugo-theme"
-
-# using theme as Hugo module (uncomment to activate)
-#theme = "github.com/Lednerb/bilberry-hugo-theme"
-
-# Generate the robots.txt file for SEO
-enableRobotsTXT = true
-
-# Change to one of your content languages defined at the end.
-DefaultContentLanguage = "en"
-
-# Enable / Disable Google Analytics statistics for your site
-googleAnalytics = "G-GRD1K1JVF5"
-
-# Enable / Disable comments on the articles via Disqus.
-disqusShortname = ""
-
-[params]
-  # Custom CSS / JS modules that will be imported by the template.
-  # Files are relative to the static/ directory or a URL.
-  # Files are imported in the order they appear here, after
-  # theme.css and theme.js, respectively.
-  css_modules = []
-  js_modules = []
-
-  # Description and meta data for the search engines
-  author = "Piraeus West Jr."
-  description = "Blog about Passive Income, Agile, Software Engineering, Music, Midi, Crypto, Bots, Personal Effectiveness and Continuous Improvement. And whatever additional interest pops up."
-  keywords = "blog,personal,passive income,real story,music,midi,crypto,bots,python,personal effectiveness,continuous improvement,fulfillment,scalable income,wisdom"
-
-  # How many articles should be displayed at once?
-  paginate = 7
-
-  # Enable / Disable MathJax
-  enable_mathjax    = false
-
-  # Enable / Disable algolia search
-  algolia_search    = true
-  algolia_appId     = "45CEN6X6AT"
-  algolia_apiKey    = "16030625f1a4d0dd3b8aefd794fd4cf1"
-  algolia_indexName = "bilberry-hugo-theme"
-  # Set this option to false if you want to search within all articles in all languages at once
-  algolia_currentLanguageOnly = true
-
-  # Enable / Disable comments on the articles via commento
-  # commentoJsURL = "https://commento.lednerb.de/js/commento.js"
-
-  # Enable / Disable Giscus comments
-  giscus             = true
-  giscusJsUrl        = "https://giscus.app/client.js"
-  giscusRepository   = "JupiterSwears/JupiterSwearsBlog"
-  giscusRepositoryId = "R_kgDOG2CnOA"
-  giscusMapping      = "pathname"
-  giscusCategory     = "Announcements"
-  giscusCategoryId   = "DIC_kwDOG2CnOM4CBKXw"
-  giscusTheme        = "transparent_dark"
-  giscusReactions    = "1"
-  giscusEmitMetadata = "0"
-  giscusLanguage     = "en"
-  giscusCrossOrigin  = "anonymous"
-
-  # Enable / Disable Utterances comments
-  utterances            = false
-  utterancesJsUrl       = "https://utteranc.es/client.js"
-  utterancesRepository  = "[ENTER REPO HERE]"
-  utterancesIssueTerm   = "pathname"
-  utterancesLabel       = "Comment"
-  utterancesTheme       = "github-light"
-  utterancesCrossOrigin = "anonymous"
-
-  # Media configuration
-    # let hugo automatically resize and crop your images to the correct sizes
-    # NB: When enabled the image files get renamed by adding additional information,
-    #     even if the image has the correct sizes.
-    resizeImages = true
-
-  # Header configuration
-    # your subtitle if you want to use any
-    subtitle = "My blog on a plethora of subjects."
-
-    # if you want to use libravatar or gravatar for the header image
-    avatarEmail = "jupiterswears@yahoo.com"
-
-    # set an path to the image file you want to use | overwrites avatar by email
-    customImage = ""
-
-    # define the icon you want to use for the overlay for the customImage or avatar.
-    overlayIcon = "fa-home"
-
-    # always display the top navigation (with pages and search) on non-mobile screens
-    permanentTopNav = false
-
-    # always display the top navigation when scrolling
-    # works only with permanentTopNav = true
-    stickyNav = false
-
-    # show a language chooser in the header
-    showHeaderLanguageChooser = true
-
-  # Content configuration
-    # Enable an optional pinned page to display at the top of the index
-    # pinnedPost = "/article/installing-bilberry-theme/"
-    # Set to true to pin only to the first page, false to all pages
-    # pinOnlyToFirstPage = true
-
-    # enable automatic localization of the article's PublishedDate with momentjs
-    enableMomentJs = true
-
-    # customize the date format | only works if momentjs is disabled | only works with English month names
-    # you can customize it with the options you find here:
-    # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
-    dateFormat = "2006-01-02"
-
-    # display the estimated reading time for an article
-    showReadingTime = true
-
-    # Minimum word count to display the Table of Contents
-    tocMinWordCount = 400
-
-  # Footer configuration
-    showFooter = true
-
-    # How many articles should be displayed at latest posts in the footer?
-    # Set to -1 to hide the 'Latest Posts' column
-    amountLatestPostsInFooter = 7
-
-    # How many categories should be displayed in the footer section?
-    # Set to -1 to hide the 'Categories' column
-    amountCategoriesInFooter = 7
-
-    # show a language chooser in the footer
-    showFooterLanguageChooser = true
-
-    # social media profile urls for the footer links
-    showSocialMedia = true
-
-    # show an archive link in the footer
-    showArchive = false
-
-    # archive grouping: "2006" by year, "2006-01" by month
-    archiveDateGrouping = "2006-01"
-
-    # define your links with FontAwesome 5 (only free icons are supported)
-    # all icons https://fontawesome.com/icons?d=gallery&m=free
-    # brand icons https://fontawesome.com/icons?d=gallery&s=brands&m=free
-    socialMediaLinks = [
-      { link = "https://twitter.com/jupiterswears", icon = "fab fa-twitter" },
-      { link = "https://github.com/JupiterSwears", icon = "fab fa-github" },
-      { link = "https://www.youtube.com/channel/UCPkP_YEaGDWKo6UjEEQvHbg", icon = "fab fa-youtube"},
-      { link = "https://jupiter-swears.bandcamp.com/", icon = "fab fa-bandcamp"},
-      { link = "https://soundcloud.com/jupiter-swears", icon = "fab fa-soundcloud"}
-      ]
-
-    # credits line configuration
-    copyrightBy = "by Piraeus West Jr."
-    copyrightUseCurrentYear = true  # set to true to always display the current year in the copyright
-    copyrightYearOverride = "2017"
-    copyrightUrl = "https://github.com/JupiterSwears"
-    creditsText = "Jupiter Swears"
-    creditsUrl = "https://github.com/JupiterSwears"
-
-
-# customize your available languages for your multi-lingual site
-# or delete the [Languages] blog to use the theme with only one supported language
-[Languages]
-  [Languages.en]
-    weight = 1
-  [Languages.nl]
-    weight = 2
-    title = "Jupiter Swears Blog"
-    subtitle = "Dit is een blog over alle onderwerpen die me bezighouden."
-
-# don't change anything below
-[taxonomies]
-  author   = "author"
-  tag      = "tags"
-  category = "categories"
-  series   = "series"
-
-[outputs]
-  home = [ "HTML", "JSON", "RSS" ]
-  page = [ "HTML" ]
-
-[markup]
-  defaultMarkdownHandler = 'goldmark'
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      # Change to 'true' if you need to render raw HTML within your markdown content
-      unsafe = false
-
-  [markup.tableOfContents]
-    endLevel = 5
-    ordered = false
-    startLevel = 2
+[markup.goldmark.renderer]
+  unsafe                = true
 
 [module]
-  [[module.imports]]
-    path = "github.com/Lednerb/bilberry-hugo-theme"
-    disable = false
-  [[module.imports.mounts]]
-    source = "exampleSite"
-    target = "assets/exampleSite"
+  [module.hugoVersion]
+  extended              = true
+  min                   = "0.62.0"
+
+[outputs]
+  home                  = ["html", "json", "rss"]
+
+[params]
+  enableCDN             = true
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  highlightjs           = true
+  highlightjsTheme      = ""
+  highlightjsLang       = []
+  viewMorePostsLink     = "blog"
+  readingTime           = true
+  imageStretch          = ""
+  removeBlur            = false
+  socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
+  hideEmptyStats        = false
+  toc                   = true
+  tocWords              = 400
+
+  [params.meta]
+    description         = "Blog about Passive Income, Agile, Software Engineering, Music, Midi, Crypto, Bots, Personal Effectiveness and Continuous Improvement. And whatever additional interest pops up."
+    author              = "Pireaus West Jr."
+    keywords            = "blog,personal,passive income,real story,music,midi,crypto,bots,python,personal effectiveness,continuous improvement,fulfillment,scalable income,wisdom"
+    favicon             = true
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
+
+  [params.header]
+    navbarTitle         = "Jupiter Swears"
+    dynamicTitles       = true
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = true
+
+  [params.intro]
+    header                = "Jupiter Swears Blog"
+    paragraph             = "A plethora of interesting subjects."
+    rssIntro              = true
+    socialIntro           = true
+    hideWhenSingleColumn  = false
+    alwaysOnHomepage      = false
+
+    [params.intro.pic]
+      src                 = "img/main/avatar.png"
+      shape               = "circle"
+      width               = ""
+      alt                 = "Jupiter Swears"
+
+  [params.sidebar]
+    about               = "Jupiter Swears is an anagram of Pireaus West Jr., writing about all interests"
+    postAmount          = 5
+    categories          = true
+    categoriesByCount   = true
+
+  [params.footer]
+    rssFooter           = true
+    socialFooter        = true
+
+  [params.utterances]
+    enabled             = false
+    repo                = ""
+    issueTerm           = "pathname"
+    issueNumber         = ""
+    label               = ""
+    theme               = "github-light"
+
+  [params.staticman]
+    enabled             = true
+    api                 = ""  # No Trailing Slash
+    gitProvider         = ""
+    username            = ""
+    repo                = ""
+    branch              = ""
+
+    [params.staticman.recaptcha]
+      siteKey           = ""
+      encryptedKey      = ""
+
+[menu]
+
+  [[menu.main]]
+    name              = "Home"
+    identifier        = "home"
+    url               = ""
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+
+  [[menu.main]]
+    name              = "About"
+    identifier        = "about"
+    url               = "about"
+    pre               = "<i class='far fa-id-card'></i>"
+    weight            = 2
+
+  [[menu.main]]
+    name              = "Blog"
+    identifier        = "blog"
+    url               = "blog"
+    pre               = "<i class='far fa-newspaper'></i>"
+    weight            = 3
+
+  [[menu.main]]
+    name              = "Categories"
+    identifier        = "categories"
+    url               = "categories"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 5
+
+  [[menu.main]]
+    name              = "Contact"
+    identifier        = "contact"
+    url               = "contact"
+    pre               = "<i class='far fa-envelope'></i>"
+    weight            = 6
+
+[Languages]
+
+  [Languages.en]
+    LanguageCode        = "en"
+    LanguageName        = "English"
+    weight              = 1
+
+  [Languages.fr]
+    LanguageCode        = "fr"
+    LanguageName        = "Français"
+    title               = "Hugo Future Imperfect Slim en français"
+    description         = "Un thème par HTML5 UP, porté par Julio Pescador. Simplifié et amélioré par Patrick Collins. Multilingue par StatnMap. Propulsé par Hugo."
+    weight              = 2
+
+    [[Languages.fr.menu.main]]
+      name              = "Accueil"
+      identifier        = "home"
+      url               = ""
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.fr.menu.main]]
+      name              = "A Propos"
+      identifier        = "about"
+      url               = "about"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 2
+
+    [[Languages.fr.menu.main]]
+      name              = "Blog"
+      identifier        = "blog"
+      url               = "blog"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 3
+
+    [[Languages.fr.menu.main]]
+      name              = "Catégories"
+      identifier        = "categories"
+      url               = "categories"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 5
+
+    [[Languages.fr.menu.main]]
+      name              = "Contact"
+      identifier        = "contact"
+      url               = "contact"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 6
+
+  [Languages.pl]
+    LanguageCode        = "pl"
+    LanguageName        = "Polski"
+    title               = "Hugo Future Imperfect Slim po polsku"
+    description         = "Motyw HTML5 UP, przeniesiony przez Julio Pescadora i wzbogacony przez Patricka Collinsa. Wielojęzyczny przez StatnMap. Zasilany przez Hugo."
+    weight              = 2
+
+    [[Languages.pl.menu.main]]
+      name              = "Home"
+      identifier        = "home"
+      url               = ""
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.pl.menu.main]]
+      name              = "O mnie"
+      identifier        = "about"
+      url               = "about"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 2
+
+    [[Languages.pl.menu.main]]
+      name              = "Blog"
+      identifier        = "blog"
+      url               = "blog"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 3
+
+    [[Languages.pl.menu.main]]
+      name              = "Kategorie"
+      identifier        = "categories"
+      url               = "categories"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 5
+
+    [[Languages.pl.menu.main]]
+      name              = "Kontakt"
+      identifier        = "contact"
+      url               = "contact"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 6
+
+  [Languages.pt]
+    LanguageCode        = "pt"
+    LanguageName        = "Português"
+    title               = "Hugo Future Imperfect Slim em português"
+    description         = "Um tema do HTML5 UP, portado por Julio Pescadora e reduzido por Patrick Collins. Multilíngue por StatnMap. Feito com Hugo."
+    weight              = 4
+
+    [[Languages.pt.menu.main]]
+      name              = "Início"
+      identifier        = "home"
+      url               = ""
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.pt.menu.main]]
+      name              = "Sobre"
+      identifier        = "about"
+      url               = "about"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 2
+
+    [[Languages.pt.menu.main]]
+      name              = "Blog"
+      identifier        = "blog"
+      url               = "blog"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 3
+
+    [[Languages.pt.menu.main]]
+      name              = "Categorias"
+      identifier        = "categories"
+      url               = "categories"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 5
+
+    [[Languages.pt.menu.main]]
+      name              = "Contato"
+      identifier        = "contact"
+      url               = "contact"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 6
+
+  [Languages.de]
+    LanguageCode        = "de"
+    LanguageName        = "Deutsche"
+    weight              = 5
+
+  [Languages.es]
+    LanguageCode        = "es"
+    LanguageName        = "Española"
+    weight              = 6
+
+  [Languages.zh-CN]
+    LanguageCode        = "zh-CN"
+    LanguageName        = "中文 (简体)"
+    weight              = 7
+
+  [Languages.zh-TW]
+    LanguageCode        = "zh-TW"
+    LanguageName        = "中文 (正體)"
+    weight              = 8
+
+  [Languages.ja]
+    LanguageCode        = "ja"
+    LanguageName        = "日本語"
+    weight              = 9
+
+  [Languages.nl]
+    LanguageCode        = "nl"
+    LanguageName        = "Nederlands"
+    weight              = 10
+
+    [[Languages.nl.menu.main]]
+      name              = "Home"
+      identifier        = "home"
+      url               = ""
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.nl.menu.main]]
+      name              = "Over"
+      identifier        = "about"
+      url               = "about"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 2
+
+    [[Languages.nl.menu.main]]
+      name              = "Blog"
+      identifier        = "blog"
+      url               = "blog"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 3
+
+    [[Languages.nl.menu.main]]
+      name              = "Categorieën"
+      identifier        = "categories"
+      url               = "categories"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 5
+
+    [[Languages.nl.menu.main]]
+      name              = "Contact"
+      identifier        = "contact"
+      url               = "contact"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 6
+
+[social]
+  # Coding Communities
+  github                = "JupiterSwears"
+  youtube               = "channel/UCPkP_YEaGDWKo6UjEEQvHbg"
+  soundcloud            = "jupiter-swears"
+  bandcamp              = "jupiter-swears"
+  instagram             = "jupiterswears" 
+  twitter               = "JupiterSwears"
+  opensea               = "JupiterSwears"
+ 
+  # Email
+  email                 = "jupiterswears@yahoo.com"
