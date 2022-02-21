@@ -1,6 +1,6 @@
 +++
 title = "Serendipity Surface Area"
-description = "The amount of "
+description = "Grow your fortune by increasing your exposure to Serendipity"
 author = "Piraeus West Jr."
 date = "2022-02-21"
 tags = ["Serendipity", "reason", "about"]
