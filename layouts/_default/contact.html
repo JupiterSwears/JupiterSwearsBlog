@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <article class="post">
+    <header>
+      <div class="title">
+        <h1><a href="{{ .RelPermalink }}">{{ i18n "contact" }}</a></h1>
+        {{ with .Description }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </header>
+      <div id="content">
+        {{ .Content }}
+        <div class="contact-container">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdpyGoCy9CX15ybat_-44YDDCBdiD7sB-5EG-43ssxb5briHg/viewform?embedded=true" width="640" height="1024" frameborder="0" marginheight="0" marginwidth="0">Laden…</iframe>
+      </div>
+    </div>
+  </article>
+{{ end }}
