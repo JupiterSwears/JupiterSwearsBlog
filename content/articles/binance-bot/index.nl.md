@@ -2,7 +2,7 @@
 title = "Binance basics"
 description = "Foundation of a binance bot with websocket"
 author = "Piraeus West Jr."
-date = "2022-02-20"
+date = "2022-03-01"
 tags = ["Crypto", "bot", "python"]
 categories = ["Crypto", "Affiliates"]
 [[images]]
@@ -13,7 +13,7 @@ categories = ["Crypto", "Affiliates"]
 
 # BOT BUILDING BASICS
 
-## Use websockets to get ticker data
+## Gebruik websockets om koers data op te vragen bij Binance
 
 ```
 from binance.client import Client
