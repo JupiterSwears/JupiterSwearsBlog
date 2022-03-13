@@ -13,6 +13,8 @@ categories = ["Passive Income", "Mind"]
 
 # Serendipity Surface Area
 
-Deze blog is geworteld in de overtuiging dat Geluk de mensen vindt met een groot oppervlak voor serendipiteit. Daarom heeft deze blog een overvloed aan onderwerpen die mij interesseren en daarom anderen kunnen interesseren. En die anderen kunnen mij vinden, commentaar geven op de inhoud of hem verbeteren, anderen inspireren en zo ontstaat een virtueuze cirkel.
+Deze blog is geworteld in de overtuiging dat het geluk de mensen vindt met een groot oppervlak voor serendipiteit. Daarom heeft deze blog een overvloed aan onderwerpen die me interesseren en daarom anderen kunnen interesseren. En die anderen kunnen me vinden, commentaar geven op deze inhoud of 'm verbeteren, anderen inspireren, en zo in een virtueuze cirkel terecht komen.
 
-Maar houdt nog even vol, deze site staat pas aan haar begin.
+Gevonden worden, is alleen niet eenvoudig. Je moet het ranking-algoritme van Google verleiden. Daarom is deze blog ook een SEO-experiment. Omdat het oppervlak van serendipiteit tegenwoordig ook een functie is van de zichtbaarheid op het web en daarmee afhankelijk van ranglijsten van zoekmachines.
+
+Dus houdt nog even vol, dit is slechts het begin. Het zal routine en discipline vragen om deze verzameling ideeën en artikelen op te bouwen.
