@@ -2,7 +2,7 @@
 title = "Serendipity Surface Area"
 description = "Grow your fortune by increasing your exposure to Serendipity"
 author = "Piraeus West Jr."
-date = "2022-03-13"
+date = "2022-04-24"
 tags = ["Serendipity", "reason", "about", "fortune"]
 categories = ["Passive Income", "Mind"]
 [[images]]
@@ -18,3 +18,5 @@ This Blog is rooted in the conviction that fortune finds the people with a large
 Getting found, however, isn't a trivial task. You will need to seduce the ranking algorithms of Google. That's why this blog is also an SEO experiment. Because the Surface Area of Serendipity these days is a function of the visibility on the Web and therefor dependent on search engine rankings.
 
 So bear with me, this is only the beginning. It will take routine and discipline to build up and maintain this collection of ideas and content.
+
+If you have ideas or comments on this blog, you can leave them in the comment sections or you can file a pull request on [GitHub](https://github.com/JupiterSwears/JupiterSwearsBlog)
